@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    background-color: rgb(15, 75, 134);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#form {
+    max-width: 700px;
+}
+
+#form input {
+    width: 500px;
+    display: block;
+    background-color: palevioletred;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: 20px;
+}
+input::placeholder {
+    color: rgb(105, 104, 104);
+}
+input:focus {
+    outline: none;
+
+}
+.card {
+    width: 450px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+}
+
+.profile_image img {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid purple;
+}
+
+.profile_info {
+     margin-left: 15px;
+}
+.profile_info h2 {
+    font-size: 37px;
+    text-align: center;
+}
+.profile_info p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+ul li {
+    display: flex;
+    background-color: purple;
+    padding: 5px;
+    margin: 5px;
+}
+ul li b {
+    margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        width: 700px;
+    }
+    #form {
+        max-width: 100%;
+    }
+    .profile_info h2 {
+        text-align: start;
+    }
+}
